@@ -25,7 +25,8 @@
                             <input type="password" class="form-control" id="password" name="password" required>
                             <label for="password">Password</label>
                             <p class="help-block">
-                                <a href="{{ url('/password/reset') }}" target="_blank">Forgot?</a>
+                                {{--  <a href="{{ url('/password/reset') }}" target="_blank">Forgot?</a>  --}}
+                                <a href="{{ url('') }}">Register</a>
                             </p>
                         </div>
                         <br/>

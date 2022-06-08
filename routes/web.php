@@ -15,6 +15,10 @@ Route::get('/', function () {
 });
 Route::get('/home', 'HomeController@dashboard')->name('home');
 
+Route::get('rcreate', 'registController@create')->name('rcreate');
+Route::post('rstore', 'registController@store')->name('rstore');
+
+
 /*
 |--------------------------------------------------------------------------
 | Logging In/Out Routes
