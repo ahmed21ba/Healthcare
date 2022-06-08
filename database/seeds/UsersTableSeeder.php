@@ -13,7 +13,7 @@ class UsersTableSeeder extends Seeder {
     {
         DB::table('users')->truncate();
 
-        DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+     
 
         // create user
         App\User::create([
