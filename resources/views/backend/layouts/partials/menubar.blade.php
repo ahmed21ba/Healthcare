@@ -64,7 +64,7 @@
         <!-- END MAIN MENU -->
         <div class="menubar-foot-panel">
             <small class="no-linebreak hidden-folded">
-                <span class="opacity-75">Copyright &#183; {{ date('Y') }} &#183;</span>
+                {{--  <span class="opacity-75">Copyright &#183; {{ date('Y') }} &#183;</span>  --}}
                 <strong>
                     <a href="{{ url('/') }}"> {{ config('app.name') }}</a>
                 </strong>
