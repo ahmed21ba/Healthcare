@@ -24,7 +24,7 @@ Route::post('rstore', 'registController@store')->name('rstore');
 | Logging In/Out Routes
 |--------------------------------------------------------------------------
 */
-Auth::routes();
+// Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 /*
