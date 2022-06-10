@@ -10,6 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('auth.login');
 });
@@ -24,7 +28,7 @@ Route::post('rstore', 'registController@store')->name('rstore');
 | Logging In/Out Routes
 |--------------------------------------------------------------------------
 */
-// Auth::routes();
+Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 /*
