@@ -14,9 +14,9 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('auth.login');
-});
+// Route::get('/', function () {
+//     return view('auth.login');
+// });
 Route::get('/home', 'HomeController@dashboard')->name('home');
 
 Route::get('rcreate', 'registController@create')->name('rcreate');
@@ -28,7 +28,7 @@ Route::post('rstore', 'registController@store')->name('rstore');
 | Logging In/Out Routes
 |--------------------------------------------------------------------------
 */
-Auth::routes();
+// Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 /*
